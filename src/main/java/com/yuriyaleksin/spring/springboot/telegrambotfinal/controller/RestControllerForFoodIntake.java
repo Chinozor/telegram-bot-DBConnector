@@ -21,7 +21,7 @@ public class RestControllerForFoodIntake {
         this.foodIntakeService = foodIntakeService;
     }
 
-    @GetMapping("/all")
+    @GetMapping()
     public List<FoodIntakeDTO> getAllFoodIntakes() {
         return foodIntakeService.getAllFoodIntakes();
     }

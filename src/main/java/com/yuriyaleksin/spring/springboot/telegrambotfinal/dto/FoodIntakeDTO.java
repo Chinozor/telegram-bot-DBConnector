@@ -6,14 +6,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import java.time.LocalDate;
-import java.util.UUID;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class FoodIntakeDTO {
     @JsonProperty("id")
     private Long id;
-    @JsonProperty("dishName")
+    @JsonProperty("dish_name")
     private String dishName;
     @JsonProperty("calories")
     private Float calories;
@@ -25,7 +24,7 @@ public class FoodIntakeDTO {
     private Float proteins;
     @JsonProperty("date")
     private LocalDate date;
-    @JsonProperty("userId")
+    @JsonProperty("user_id")
     private Long userId;
     @JsonProperty("description")
     private String description;

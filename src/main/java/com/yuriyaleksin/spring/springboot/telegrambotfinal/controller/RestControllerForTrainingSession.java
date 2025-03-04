@@ -1,16 +1,13 @@
 package com.yuriyaleksin.spring.springboot.telegrambotfinal.controller;
 
 import com.yuriyaleksin.spring.springboot.telegrambotfinal.dto.TrainingSessionDTO;
-import com.yuriyaleksin.spring.springboot.telegrambotfinal.entity.TrainingSessionEntity;
 import com.yuriyaleksin.spring.springboot.telegrambotfinal.service.TrainingSessionService;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
 import java.util.List;
-import java.util.UUID;
 
 @RestController
 @RequestMapping("/trainingSession")

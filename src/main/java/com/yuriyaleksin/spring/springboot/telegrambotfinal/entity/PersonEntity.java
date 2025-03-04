@@ -3,9 +3,7 @@ package com.yuriyaleksin.spring.springboot.telegrambotfinal.entity;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.UuidGenerator;
 
-import java.util.UUID;
 
 @Getter
 @Setter
@@ -13,7 +11,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "users")
+@Table(name = "person")
 public class PersonEntity {
 
     @Id
@@ -27,7 +25,7 @@ public class PersonEntity {
     private String name;
 
     @Column
-    @JsonProperty("dailyActivity")
+    @JsonProperty("daily_activity")
     private String dailyActivity;
 
 }
