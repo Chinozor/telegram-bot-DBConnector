@@ -4,11 +4,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.UUID;
 
 @Data
 @Entity
-@Table(name = "gyms")
+@Table(name = "training_session")
 public class TrainingSessionEntity {
 
     @Id
@@ -30,6 +29,6 @@ public class TrainingSessionEntity {
     private float reps;
 
     @Column
-    @JsonProperty("personId")
+    @JsonProperty("person_id")
     private Long personId;
 }

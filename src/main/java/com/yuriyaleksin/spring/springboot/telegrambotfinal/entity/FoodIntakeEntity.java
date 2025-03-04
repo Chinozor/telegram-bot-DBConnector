@@ -5,12 +5,11 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
-import java.util.UUID;
 
 @Setter
 @Getter
 @NoArgsConstructor
-@Table(name = "diets")
+@Table(name = "food_intake")
 @Entity
 @ToString
 public class FoodIntakeEntity {
@@ -22,23 +21,23 @@ public class FoodIntakeEntity {
     private Long id;
 
     @Column
-    @JsonProperty("dishName")
+    @JsonProperty("dish_name")
     private String dishName;
 
     @Column
-    @JsonProperty("cal")
+    @JsonProperty("calories")
     private Float calories;
 
     @Column
-    @JsonProperty("f")
+    @JsonProperty("fats")
     private Float fats;
 
     @Column
-    @JsonProperty("car")
+    @JsonProperty("carbs")
     private Float carbs;
 
     @Column
-    @JsonProperty("prot")
+    @JsonProperty("proteins")
     private Float proteins;
 
     @Column
@@ -46,7 +45,7 @@ public class FoodIntakeEntity {
     private LocalDate date;
 
     @Column
-    @JsonProperty("userId")
+    @JsonProperty("user_id")
     private Long userId;
 
     @Column
